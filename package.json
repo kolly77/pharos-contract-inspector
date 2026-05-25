@@ -1,0 +1,18 @@
+{
+  "name": "pharos-contract-inspector",
+  "version": "0.1.0",
+  "description": "An Agent Skill for inspecting contracts on the Pharos Network — detects standard, reads metadata, identifies proxies, and (optionally) checks Pharosscan verification status via SocialScan",
+  "type": "module",
+  "main": "scripts/inspect_contract.js",
+  "scripts": {
+    "inspect": "node scripts/inspect_contract.js"
+  },
+  "keywords": ["pharos", "agent-skill", "contract", "inspector", "erc-20", "erc-721", "erc-1155", "proxy", "verification", "web3"],
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
