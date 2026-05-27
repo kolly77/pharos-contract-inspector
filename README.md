@@ -110,8 +110,8 @@ Agents compatible with Pharos Agent Center (Claude Code, Codex, OpenClaw, etc.) 
 
 | Network | Chain ID | RPC | Explorer |
 |---|---|---|---|
-| Mainnet | 1672 | `rpc.pharos.xyz` | `pharosscan.xyz` |
-| Atlantic Testnet | 688689 | `atlantic.dplabs-internal.com` | `atlantic.pharosscan.xyz` |
+| Mainnet | 1672 | `rpc.pharos.xyz` | `http://pharosscan.xyz` |
+| Atlantic Testnet | 688689 | `atlantic.dplabs-internal.com` | `http://atlantic.pharosscan.xyz` |
 
 ## License
 
