@@ -25,19 +25,19 @@ const pharosMainnet = defineChain({
   id: 1672,
   name: "Pharos Pacific Ocean Mainnet",
   nativeCurrency: { name: "Pharos", symbol: "PROS", decimals: 18 },
-  rpcUrls: { default: { http: ["rpc.pharos.xyz"] } },
+  rpcUrls: { default: { http: ["https://rpc.pharos.xyz"] } },
 });
 
 const pharosTestnet = defineChain({
   id: 688689,
   name: "Pharos Atlantic Testnet",
   nativeCurrency: { name: "Pharos", symbol: "PROS", decimals: 18 },
-  rpcUrls: { default: { http: ["atlantic.dplabs-internal.com"] } },
+  rpcUrls: { default: { http: ["https://atlantic.dplabs-internal.com"] } },
 });
 
 const EXPLORERS = {
-  mainnet: "pharosscan.xyz",
-  testnet: "atlantic.pharosscan.xyz",
+  mainnet: "https://pharosscan.xyz",
+  testnet: "https://atlantic.pharosscan.xyz",
 };
 
 const SOCIALSCAN_NETWORKS = {
@@ -167,7 +167,7 @@ async function inspectViaRpc(client, address, explorerUrl) {
 async function checkVerification(address, networkKey, apiKey) {
   const network = SOCIALSCAN_NETWORKS[networkKey];
   const url =
-    `api.socialscan.io/${network}/v1/explorer/command_api/contract` +
+    `https://api.socialscan.io/${network}/v1/explorer/command_api/contract` +
     `?module=contract&action=getsourcecode&address=${address}&apikey=${apiKey}`;
 
   const response = await fetch(url);
